@@ -9,7 +9,7 @@ private:
   int year;
   int rgNo;
   int rent;
-  bool rented;
+  bool rented;//can be 0 or 1
 
 public:
   Car(string company = "NA", string model = "NA", int year = 0, int rgNo = 0, int rent = 0)
