@@ -3,6 +3,7 @@
 #include "car.h"
 using namespace std;
 
+
 int main()
 {
   Car car1("Toyota", "Coralla", 2022, 1);
@@ -64,4 +65,5 @@ int main()
     cout << "Invalid input" << endl;
     break;
   }
+   cout << "rent after charges: " <<  extraCharges(car1) << endl;
 }

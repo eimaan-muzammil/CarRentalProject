@@ -2,8 +2,6 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
-
 class Car
 {
 private:
@@ -40,6 +38,8 @@ public:
     cout << "registration no. :" << this->rgNo << endl;
     cout << "rent rs :" << this->rent << "/day" << endl;
   }
+  friend double extraCharges(Car& car1);
+
 };
 void displayCar(Car &car)
 {
@@ -88,4 +88,8 @@ void Car::set_model(string model)
 void Car::set_rented(bool rented)
 {
   this->rented = rented;
+}
+double extraCharges(Car& car1) {
+    car1.rent += 1000.0; 
+    return car1.rent; 
 }
