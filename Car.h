@@ -39,7 +39,9 @@ public:
     cout << "rent rs :" << this->rent << "/day" << endl;
   }
   friend double extraCharges(Car& car1);
-
+  inline int add(int a, int b) {
+   
+}
 };
 void displayCar(Car &car)
 {
@@ -92,4 +94,7 @@ void Car::set_rented(bool rented)
 double extraCharges(Car& car1) {
     car1.rent += 1000.0; 
     return car1.rent; 
+}
+inline int add(int a, int b) {
+    return a + b;
 }

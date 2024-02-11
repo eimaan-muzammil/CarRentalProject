@@ -66,4 +66,7 @@ int main()
     break;
   }
    cout << "rent after charges: " <<  extraCharges(car1) << endl;
+  // Using the inline function
+  int result = add(6, 3); 
+    std::cout << "Result: " << result << std::endl;
 }
