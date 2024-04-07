@@ -96,5 +96,5 @@ double extraCharges(Car& car1) {
     return car1.rent; 
 }
 inline int add(int a, int b) {
-    return a + b;
+    return a + b;//inline function
 }
